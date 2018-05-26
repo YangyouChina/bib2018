@@ -1,0 +1,126 @@
+// bibtechnology.idl : bib-technology.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(bibtechnology.tlb)。
+
+#include "olectl.h"
+[ uuid(24EB8014-0C5F-4599-AB38-681177F8E4C3), version(1.0) ]
+library bibtechnology
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CbibtechnologyDoc 的主调度接口
+	
+	[ uuid(EC0FC0B3-4E42-4A76-A5DF-AE4216F73ACF) ]
+	dispinterface Ibibtechnology
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  CbibtechnologyDoc 的类信息
+	
+	[ uuid(F80D09B9-02CB-4991-86C5-5A91B6E64D9B) ]
+	coclass bibtechnology
+	{
+		[default] dispinterface Ibibtechnology;
+	};
+	//  COMSETTING 的主调度接口
+		
+	[ uuid(18484DAC-CA0A-44EA-B71B-5968923276EB) ]
+	dispinterface ICOMSETTING
+	{
+		properties:
+		methods:
+	};
+
+	//  COMSETTING 的类信息
+
+	[ uuid(37021A54-8D33-4431-A0E1-24A6D920CB6D) ]
+	coclass COMSETTING
+	{
+		[default] dispinterface ICOMSETTING;
+	};
+	//  TempControl 的主调度接口
+		
+	[ uuid(57B0CB89-518B-4068-BB13-F03698A978F0) ]
+	dispinterface ITempControl
+	{
+		properties:
+		methods:
+	};
+
+	//  TempControl 的类信息
+
+	[ uuid(D31737E0-F457-4D84-89C7-1920898988A8) ]
+	coclass TempControl
+	{
+		[default] dispinterface ITempControl;
+	};
+	//  SpeedControl 的主调度接口
+		
+	[ uuid(CA8A0BF4-26DB-466D-93CD-3C5B8C25D90D) ]
+	dispinterface ISpeedControl
+	{
+		properties:
+		methods:
+	};
+
+	//  SpeedControl 的类信息
+
+	[ uuid(046883B2-5CA4-458C-B883-FE4B29A3BC2F) ]
+	coclass SpeedControl
+	{
+		[default] dispinterface ISpeedControl;
+	};
+	//  Login 的主调度接口
+		
+	[ uuid(90FF90C4-4246-4B11-B443-8DA2656C586C) ]
+	dispinterface ILogin
+	{
+		properties:
+		methods:
+	};
+
+	//  Login 的类信息
+
+	[ uuid(4EB895E5-ECA3-4523-A68B-6611D0DF2A92) ]
+	coclass Login
+	{
+		[default] dispinterface ILogin;
+	};
+	//  ChangePassword 的主调度接口
+		
+	[ uuid(445EE986-6BE4-4226-8884-37F3DEFD3513) ]
+	dispinterface IChangePassword
+	{
+		properties:
+		methods:
+	};
+
+	//  ChangePassword 的类信息
+
+	[ uuid(DF39DBA3-90CE-4978-BF60-7E432AC32CBA) ]
+	coclass ChangePassword
+	{
+		[default] dispinterface IChangePassword;
+	};
+	//  ChooseHeater 的主调度接口
+		
+	[ uuid(5D68FE0F-CE36-478D-9EFD-D90B7AC23EB4) ]
+	dispinterface IChooseHeater
+	{
+		properties:
+		methods:
+	};
+
+	//  ChooseHeater 的类信息
+
+	[ uuid(60033C16-0399-422C-97C1-15F7BF9E5AED) ]
+	coclass ChooseHeater
+	{
+		[default] dispinterface IChooseHeater;
+	};
+};
