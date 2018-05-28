@@ -761,7 +761,7 @@ void CDataCtrl::OnTimer(UINT nIDEvent)
 		m_plot.AddNewPoint(m_time, 5.2, 11);
 		m_plot.AddNewPoint(m_time, 1.1, 12);
 		m_plot.AddNewPoint(m_time, 9.3, 13);
-		//曲线移动速度  
+		//曲线移动速度   
 		m_time += 0.0625f;
 		/*CString look;
 		look.Format(_T("%.3f"), Speed_Line);
